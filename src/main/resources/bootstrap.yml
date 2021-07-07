@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: purchase-service
+  cloud:
+    config:
+      uri: https://az-config-server.azurewebsites.net
