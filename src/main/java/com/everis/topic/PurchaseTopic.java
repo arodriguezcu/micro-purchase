@@ -37,11 +37,7 @@ public class PurchaseTopic {
   
   Map<String, Object> config = new HashMap<>();
   
-<<<<<<< HEAD
-  config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "20.88.211.57:80");
-=======
   config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, host);
->>>>>>> branch 'main' of https://github.com/arodriguezcu/micro-purchase.git
   
   config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
   
