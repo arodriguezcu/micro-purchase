@@ -18,11 +18,8 @@ import org.apache.kafka.common.serialization.StringSerializer;
 @Configuration
 public class PurchaseTopic {
   
-  @Value("${kafka.server.hostname}")
-  private String hostName;
-  
-  @Value("${kafka.server.port}")
-  private String port;
+  @Value("${spring.kafka.bootstrap-servers}")
+  private String host;
   
   @Bean
   public NewTopic createPurchaseTopic() {
@@ -40,7 +37,11 @@ public class PurchaseTopic {
   
   Map<String, Object> config = new HashMap<>();
   
+<<<<<<< HEAD
   config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "20.88.211.57:80");
+=======
+  config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, host);
+>>>>>>> branch 'main' of https://github.com/arodriguezcu/micro-purchase.git
   
   config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
   
