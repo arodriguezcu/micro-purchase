@@ -1,13 +1,14 @@
 package com.everis.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import lombok.Data;
-
+/**
+ * Clase Transaction.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "transaction")
 @Data
@@ -27,5 +28,5 @@ public class Transaction {
 
   @Field(name = "description")
   private String description;
-  
+
 }
