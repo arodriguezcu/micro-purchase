@@ -1,4 +1,4 @@
 FROM openjdk:8-alpine
-COPY "./target/purchase-service-0.0.1-SNAPSHOT.jar" "apppurchase-service.jar"
+COPY "./target/micro-purchase-0.0.1-SNAPSHOT.jar" "appmicro-purchase.jar"
 EXPOSE 8092
-ENTRYPOINT ["java","-jar","apppurchase-service.jar"]
+ENTRYPOINT ["java","-jar","appmicro-purchase.jar"]

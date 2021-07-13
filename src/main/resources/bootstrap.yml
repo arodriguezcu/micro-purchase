@@ -1,6 +1,6 @@
 spring:
   application:
-    name: purchase-service
+    name: micro-purchase
   cloud:
     config:
 #      uri: http://localhost:8081
